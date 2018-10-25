@@ -37,10 +37,10 @@ void speed_calc(float vx, float vw)
 //	VAL_LIMIT(vy, -MAX_CHASSIS_VY_SPEED, MAX_CHASSIS_VY_SPEED);  //mm/s
 	VAL_LIMIT(vw, -MAX_CHASSIS_VR_SPEED, MAX_CHASSIS_VR_SPEED);  //deg/s
 	
-	wheel_rpm[0] = (vx / RADIUS) / CHASSIS_DECELE_RATIO + ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
+	wheel_rpm[0] = (vx / RADIUS) / CHASSIS_DECELE_RATIO - ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
 	wheel_rpm[1] = (vx / RADIUS) / CHASSIS_DECELE_RATIO - ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
-	wheel_rpm[2] = (vx / RADIUS) / CHASSIS_DECELE_RATIO - ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
-	wheel_rpm[3] = (vx / RADIUS) / CHASSIS_DECELE_RATIO + ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
+	wheel_rpm[2] = -(vx / RADIUS) / CHASSIS_DECELE_RATIO - ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
+	wheel_rpm[3] = -(vx / RADIUS) / CHASSIS_DECELE_RATIO - ((vw * (WHEELTRACK / 2.0)) / RADIUS) / CHASSIS_DECELE_RATIO;
 	
 	VAL_LIMIT(wheel_rpm[0], -MAX_WHEEL_RPM, MAX_WHEEL_RPM);  //rpm
 	VAL_LIMIT(wheel_rpm[1], -MAX_WHEEL_RPM, MAX_WHEEL_RPM);  //rpm
@@ -89,9 +89,9 @@ void Start_chassis_ctrl_task(void const * argument)
   while(1)
   {
     chassis_operation_func(rc.ch2, rc.ch3);
-		speed_calc(chassis.vx, chassis.vw);
+    speed_calc(chassis.vx, chassis.vw);
     send_chassis_cur(chassis.current);
-		osDelayUntil(&chassis_ctrl_wake_time, CHASSIS_CTRL_PERIOD);
+    osDelayUntil(&chassis_ctrl_wake_time, CHASSIS_CTRL_PERIOD);
   }
   
 }
