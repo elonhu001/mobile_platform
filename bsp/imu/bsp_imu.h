@@ -11,7 +11,7 @@
 
 #ifndef __MPU_H__
 #define __MPU_H__
-
+#include "sys_config.h"
 #include "mytype.h"
 #define MPU_DELAY(x) HAL_Delay(x)
 
@@ -68,13 +68,19 @@ typedef struct
 extern mpu_data_t mpu_data;
 extern imu_t      imu;
 
+uint8_t mpu_write_byte(uint8_t const reg, uint8_t const data);
+uint8_t mpu_write_bytes(uint8_t const regAddr, uint8_t* pData, uint8_t len);
+uint8_t mpu_read_byte(uint8_t const reg);
+uint8_t mpu_read_bytes(uint8_t const regAddr, uint8_t* pData, uint8_t len);
+
+#if RM_LIB
 uint8_t   mpu_device_init(void);
 void init_quaternion(void);
 void mpu_get_data(void);
 void imu_ahrs_update(void);
 void imu_attitude_update(void);
 void mpu_offset_call(void);
-
+#endif
 #endif
 
 

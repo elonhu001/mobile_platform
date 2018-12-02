@@ -53,12 +53,12 @@
 #include "can.h"
 #include "dma.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-#include "bsp_uart.h"
-#include "bsp_can.h"
+#include "sys_config.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -115,13 +115,14 @@ int main(void)
   MX_USART6_UART_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
+  MX_TIM12_Init();
   MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
+//  delay_init(180);
 	led_off();
 	dbus_uart_init();
 	can_filter_init(&hcan1);
 	can_filter_init(&hcan2);
-
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

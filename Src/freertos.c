@@ -56,7 +56,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */     
-#include "chassis_ctrl.h"
+#include "sys_config.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -76,11 +76,11 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+osThreadId chassis_ctrl_TaskHandle;
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
 osSemaphoreId myBinarySem01Handle;
-osThreadId chassis_ctrl_TaskHandle;
+
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
    
@@ -147,6 +147,7 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+    led_blink(1);
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */

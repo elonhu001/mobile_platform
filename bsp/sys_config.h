@@ -1,12 +1,81 @@
 #ifndef __SYS_H__
 #define __SYS_H__
 
+/*choose the type of chassis, only can choose one*/
+#define TWO_WHEELS_ON  1
+#define FOUR_WHEELS_ON 0
+/*choose the way to get imu data*/
+#define IIC_DMP_ON 0
+#define SPI_DMP_ON 0
+#define RM_LIB 1
+
+/*standerd lib*/
+//#include "sys_config.h"
 #include "stm32f4xx_hal.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include "cmsis_os.h"
+#include "sys.h"
+/*imu*/
+#if SPI_DMP_ON || IIC_DMP_ON
+#include "myiic.h"
+#include "mpu6050.h"
+#include "inv_mpu.h"
+#include "inv_mpu_dmp_motion_driver.h"
+#include "dmpKey.h"
+#include "dmpmap.h"
+#elif RM_LIB
+#include "bsp_imu.h"
+#endif
+
+/*bsp*/
+#include "bsp_uart.h"
+#include "bsp_can.h"
+#include "gpio.h"
+/*task*/
+#include "ctrl_task.h"
+/*lib*/
+#include "pid.h"
+
+typedef uint8_t u8;
+typedef uint16_t u16;
+typedef uint32_t u32;
+
+
 
 /**********************remote control setting***************************/
 /* normalized remote controller proportion */
 #define RC_RESOLUTION     660.0f
 
+
+#if TWO_WHEELS_ON
+/* the radius of wheel(mm) */
+#define RADIUS                 62.5f
+/* the perimeter of wheel(mm) */
+#define PERIMETER              393
+/* wheel track distance(mm) */
+#define WHEELTRACK             415
+
+/* chassis motor use 3508 default */
+/* chassis motor use 3508 */
+/* the deceleration ratio of chassis motor */
+#define CHASSIS_DECELE_RATIO (1.0f/19.0f)
+/* single 3508 motor maximum speed, unit is rpm */
+#define MAX_WHEEL_RPM        10000  //8347rpm = 3500mm/s
+/* chassis maximum translation speed, unit is mm/s */
+#define MAX_CHASSIS_VX_SPEED 8000  //8000rpm
+#define MAX_CHASSIS_VY_SPEED 5000
+/* chassis maximum rotation speed, unit is degree/s */
+#define MAX_CHASSIS_VR_SPEED 300   //5000rpm
+/* the ratio of motor encoder value translate to degree */
+#define ENCODER_ANGLE_RATIO    (8192.0f/360.0f)
+#endif
+
+
+#if FOUR_WHEELS_ON
 /*************************chassis setting*******************************/
 /* remote mode chassis move speed limit */
 /* left and right speed (mm/s) */
@@ -47,10 +116,11 @@
 #define MAX_CHASSIS_VY_SPEED 5000
 /* chassis maximum rotation speed, unit is degree/s */
 #define MAX_CHASSIS_VR_SPEED 300   //5000rpm
-
-
 /* the ratio of motor encoder value translate to degree */
 #define ENCODER_ANGLE_RATIO    (8192.0f/360.0f)
+#endif
+
+
 
 #define VAL_LIMIT(val, min, max) \
 do {\

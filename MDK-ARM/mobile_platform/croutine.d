@@ -1,7 +1,7 @@
 mobile_platform\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 mobile_platform\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-mobile_platform\croutine.o: C:\MySoftware\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
-mobile_platform\croutine.o: C:\MySoftware\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+mobile_platform\croutine.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stddef.h
+mobile_platform\croutine.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stdint.h
 mobile_platform\croutine.o: ../Inc/FreeRTOSConfig.h
 mobile_platform\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 mobile_platform\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

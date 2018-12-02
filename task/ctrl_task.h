@@ -1,10 +1,8 @@
-#ifndef __CHASSIS_CTRL_H
-#define __CHASSIS_CTRL_H
-#include "stdlib.h"
-#include "string.h"
+#ifndef __CTRL_TASK_H
+#define __CTRL_TASK_H
 #include "sys_config.h"
 
-#define CHASSIS_CTRL_PERIOD (5)
+#define CTRL_TASK_PERIOD (5)
 /*this struct is for chassis contrl*/
 typedef struct
 {
@@ -35,9 +33,12 @@ typedef struct
 //  uint8_t         follow_gimbal;
 } chassis_t;
 
+#if FOUR_WHEELS_ON
 void chassis_operation_func(int16_t forward_back, int16_t rotate);
 //void chassis_stop_handler(void);
 void speed_calc(float vx, float vw);
+#endif
+
 void chassis_param_init(void);
 void Start_chassis_ctrl_task(void const * argument);
 

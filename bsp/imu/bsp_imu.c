@@ -16,11 +16,15 @@
 #include "mpu6500_reg.h"
 #include "spi.h"
 
-#define BOARD_DOWN (1)   
-#define IST8310
+
 #define MPU_HSPI hspi5
 #define MPU_NSS_LOW HAL_GPIO_WritePin(GPIOF, GPIO_PIN_6, GPIO_PIN_RESET)
 #define MPU_NSS_HIGH HAL_GPIO_WritePin(GPIOF, GPIO_PIN_6, GPIO_PIN_SET)
+
+
+
+#define BOARD_DOWN (1)   
+#define IST8310
 
 #define Kp 2.0f                                              /* 
                                                               * proportional gain governs rate of 
@@ -87,6 +91,16 @@ uint8_t mpu_write_byte(uint8_t const reg, uint8_t const data)
     return 0;
 }
 
+uint8_t mpu_write_bytes(uint8_t const regAddr, uint8_t* pData, uint8_t len)
+{
+    MPU_NSS_LOW;
+    tx = regAddr & 0x7F;
+    HAL_SPI_Transmit(&MPU_HSPI, &tx, 1, 55);
+    HAL_SPI_Transmit(&MPU_HSPI, pData, len, 55);
+    MPU_NSS_HIGH;
+    return 0;
+}
+
 /**
   * @brief  read a byte of data from specified register
   * @param  reg: the address of register to be read
@@ -123,6 +137,7 @@ uint8_t mpu_read_bytes(uint8_t const regAddr, uint8_t* pData, uint8_t len)
     return 0;
 }
 
+#if RM_LIB 
 /**
 	* @brief  write IST8310 register through MPU6500's I2C master
   * @param  addr: the address to be written of IST8310's register
@@ -688,3 +703,4 @@ void imu_attitude_update(void)
 	imu.rol =  atan2(2*q2*q3 + 2*q0*q1, -2*q1*q1 - 2*q2*q2 + 1)* 57.3;
 }
 
+#endif

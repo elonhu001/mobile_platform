@@ -1,7 +1,7 @@
 mobile_platform\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
 mobile_platform\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-mobile_platform\port.o: C:\MySoftware\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
-mobile_platform\port.o: C:\MySoftware\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+mobile_platform\port.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stddef.h
+mobile_platform\port.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stdint.h
 mobile_platform\port.o: ../Inc/FreeRTOSConfig.h
 mobile_platform\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 mobile_platform\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

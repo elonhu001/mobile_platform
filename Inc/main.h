@@ -59,6 +59,9 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define IMU_INT_Pin GPIO_PIN_8
+#define IMU_INT_GPIO_Port GPIOB
+#define IMU_INT_EXTI_IRQn EXTI9_5_IRQn
 #define PW24V_1_Pin GPIO_PIN_2
 #define PW24V_1_GPIO_Port GPIOH
 #define PW24V_2_Pin GPIO_PIN_3
@@ -69,6 +72,8 @@
 #define PW24V_4_GPIO_Port GPIOH
 #define KEY_Pin GPIO_PIN_2
 #define KEY_GPIO_Port GPIOB
+#define BUZZER_Pin GPIO_PIN_6
+#define BUZZER_GPIO_Port GPIOH
 #define LED_RED_Pin GPIO_PIN_11
 #define LED_RED_GPIO_Port GPIOE
 #define LED_GREEN_Pin GPIO_PIN_14
