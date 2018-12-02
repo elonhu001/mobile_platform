@@ -36,7 +36,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5B38A133)
 I (../Inc/can.h)(0x5C028BB1)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\math.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5B38A141)
@@ -62,6 +62,7 @@ I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (..\bsp\uart\bsp_uart.c)(0x5BA5EF89)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\bsp_uart.o --omf_browse mobile_platform\bsp_uart.crf --depend mobile_platform\bsp_uart.d)
@@ -102,7 +103,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5B38A133)
 F (..\bsp\IIC\myiic.c)(0x5C0394C7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\myiic.o --omf_browse mobile_platform\myiic.crf --depend mobile_platform\myiic.d)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Inc/main.h)(0x5C028BC1)
@@ -162,10 +163,11 @@ I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (..\bsp\MPU6050\mpu6050.c)(0x5C0392F8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\mpu6050.o --omf_browse mobile_platform\mpu6050.crf --depend mobile_platform\mpu6050.d)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Inc/main.h)(0x5C028BC1)
@@ -225,6 +227,7 @@ I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (..\bsp\MPU6050\eMPL\inv_mpu.c)(0x5C0394FC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\inv_mpu.o --omf_browse mobile_platform\inv_mpu.crf --depend mobile_platform\inv_mpu.d)
@@ -263,10 +266,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5B38A133)
-F (..\bsp\sys_config.h)(0x5C039008)()
+F (..\bsp\sys_config.h)(0x5C03F673)()
 F (..\bsp\imu\bsp_imu.c)(0x5C038E33)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\bsp_imu.o --omf_browse mobile_platform\bsp_imu.crf --depend mobile_platform\bsp_imu.d)
 I (..\bsp\imu\bsp_imu.h)(0x5C038EC0)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Inc/main.h)(0x5C028BC1)
@@ -322,6 +325,7 @@ I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 I (..\bsp\imu\mytype.h)(0x5BA5EF7C)
@@ -330,7 +334,7 @@ I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 I (..\bsp\imu\ist8310_reg.h)(0x5BA5EF7C)
 I (..\bsp\imu\mpu6500_reg.h)(0x5BA5EF7C)
 I (../Inc/spi.h)(0x5C028BBB)
-F (../Src/main.c)(0x5C028BC2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\main.o --omf_browse mobile_platform\main.crf --depend mobile_platform\main.d)
+F (../Src/main.c)(0x5C03F1AD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\main.o --omf_browse mobile_platform\main.crf --depend mobile_platform\main.d)
 I (../Inc/main.h)(0x5C028BC1)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
@@ -381,10 +385,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5B38A141
 I (../Inc/can.h)(0x5C028BB1)
 I (../Inc/dma.h)(0x5C028BB3)
 I (../Inc/spi.h)(0x5C028BBB)
-I (../Inc/tim.h)(0x5C028BBC)
+I (../Inc/tim.h)(0x5C03F88A)
 I (../Inc/usart.h)(0x5C028BBD)
 I (../Inc/gpio.h)(0x5C028BAD)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\string.h)(0x588B8344)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\math.h)(0x588B8344)
@@ -431,7 +435,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5B38A133)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\string.h)(0x588B8344)
 I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\math.h)(0x588B8344)
@@ -458,6 +462,7 @@ I (C:\0_Softwares\0_KEIL\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (../Src/can.c)(0x5C028BB1)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\can.o --omf_browse mobile_platform\can.crf --depend mobile_platform\can.d)
@@ -547,7 +552,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5B38A141)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5B38A141)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5B38A141)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5B38A141)
-I (..\bsp\sys_config.h)(0x5C039008)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5B38A133)
@@ -590,6 +595,7 @@ I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (../Src/spi.c)(0x5C028BBA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\spi.o --omf_browse mobile_platform\spi.crf --depend mobile_platform\spi.d)
@@ -627,8 +633,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5B38A133)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5B38A133)
 I (../Inc/gpio.h)(0x5C028BAD)
-F (../Src/tim.c)(0x5C028BBB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\tim.o --omf_browse mobile_platform\tim.crf --depend mobile_platform\tim.d)
-I (../Inc/tim.h)(0x5C028BBC)
+F (../Src/tim.c)(0x5C03F428)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\tim.o --omf_browse mobile_platform\tim.crf --depend mobile_platform\tim.d)
+I (../Inc/tim.h)(0x5C03F88A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Inc/main.h)(0x5C028BC1)
@@ -1505,8 +1511,8 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5B38A141)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5B38A141)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5B38A141)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5B38A131)
-F (..\task\ctrl_task.c)(0x5C0395EC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\ctrl_task.o --omf_browse mobile_platform\ctrl_task.crf --depend mobile_platform\ctrl_task.d)
-I (..\bsp\sys_config.h)(0x5C039008)
+F (..\task\ctrl_task.c)(0x5C03F943)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\ctrl_task.o --omf_browse mobile_platform\ctrl_task.crf --depend mobile_platform\ctrl_task.d)
+I (..\bsp\sys_config.h)(0x5C03F673)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5B38A132)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5C028BC0)
 I (../Inc/main.h)(0x5C028BC1)
@@ -1566,6 +1572,7 @@ I (..\bsp\uart\bsp_uart.h)(0x5BA9FAF1)
 I (../Inc/usart.h)(0x5C028BBD)
 I (..\bsp\can\bsp_can.h)(0x5BAE1BEE)
 I (../Inc/gpio.h)(0x5C028BAD)
+I (../Inc/tim.h)(0x5C03F88A)
 I (..\task\ctrl_task.h)(0x5C023E8D)
 I (..\lib\pid.h)(0x5B8A6266)
 F (..\lib\pid.c)(0x5BAE0F37)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\bsp\can -I ..\bsp\uart -I ..\task -I ..\lib -I ..\bsp\IIC -I ..\bsp\MPU6050 -I ..\bsp\MPU6050\eMPL -I ..\bsp -I ..\bsp\sys -I ..\bsp\imu-I.\RTE\_mobile_platform-IC:\0_Softwares\0_KEIL\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\0_Softwares\0_KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o mobile_platform\pid.o --omf_browse mobile_platform\pid.crf --depend mobile_platform\pid.d)

@@ -35,6 +35,7 @@
 #include "bsp_uart.h"
 #include "bsp_can.h"
 #include "gpio.h"
+#include "tim.h"
 /*task*/
 #include "ctrl_task.h"
 /*lib*/

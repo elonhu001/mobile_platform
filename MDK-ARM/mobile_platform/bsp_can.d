@@ -62,5 +62,6 @@ mobile_platform\bsp_can.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stdboo
 mobile_platform\bsp_can.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\bsp_can.o: ../Inc/usart.h
 mobile_platform\bsp_can.o: ../Inc/gpio.h
+mobile_platform\bsp_can.o: ../Inc/tim.h
 mobile_platform\bsp_can.o: ..\task\ctrl_task.h
 mobile_platform\bsp_can.o: ..\lib\pid.h

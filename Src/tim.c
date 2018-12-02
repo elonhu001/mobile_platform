@@ -62,9 +62,9 @@ void MX_TIM12_Init(void)
   TIM_OC_InitTypeDef sConfigOC;
 
   htim12.Instance = TIM12;
-  htim12.Init.Prescaler = 0;
+  htim12.Init.Prescaler = TIM_PSC_APB1-1;
   htim12.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim12.Init.Period = 0;
+  htim12.Init.Period = PWM_RESOLUTION-1;
   htim12.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_PWM_Init(&htim12) != HAL_OK)
   {
@@ -143,7 +143,17 @@ void HAL_TIM_PWM_MspDeInit(TIM_HandleTypeDef* tim_pwmHandle)
 } 
 
 /* USER CODE BEGIN 1 */
-
+void PWM_SetDuty(TIM_HandleTypeDef *tim,uint32_t tim_channel,float duty)
+{
+	
+	switch(tim_channel){	
+		case TIM_CHANNEL_1: tim->Instance->CCR1 = (PWM_RESOLUTION*duty) - 1;break;
+		case TIM_CHANNEL_2: tim->Instance->CCR2 = (PWM_RESOLUTION*duty) - 1;break;
+		case TIM_CHANNEL_3: tim->Instance->CCR3 = (PWM_RESOLUTION*duty) - 1;break;
+		case TIM_CHANNEL_4: tim->Instance->CCR4 = (PWM_RESOLUTION*duty) - 1;break;
+	}
+	
+}
 /* USER CODE END 1 */
 
 /**

@@ -58,7 +58,10 @@
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+#define TIM_PSC_APB1 (APB1_TIMER_CLOCKS/PWM_FREQUENCE)/PWM_RESOLUTION -1
+#define PWM_FREQUENCE 1000
+#define PWM_RESOLUTION 10000
+#define APB1_TIMER_CLOCKS 90000000
 /* USER CODE END Includes */
 
 extern TIM_HandleTypeDef htim12;
@@ -74,7 +77,7 @@ void MX_TIM12_Init(void);
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
                     
 /* USER CODE BEGIN Prototypes */
-
+void PWM_SetDuty(TIM_HandleTypeDef *tim,uint32_t tim_channel,float duty);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

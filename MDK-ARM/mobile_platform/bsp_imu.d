@@ -58,6 +58,7 @@ mobile_platform\bsp_imu.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\bsp_imu.o: ../Inc/usart.h
 mobile_platform\bsp_imu.o: ..\bsp\can\bsp_can.h
 mobile_platform\bsp_imu.o: ../Inc/gpio.h
+mobile_platform\bsp_imu.o: ../Inc/tim.h
 mobile_platform\bsp_imu.o: ..\task\ctrl_task.h
 mobile_platform\bsp_imu.o: ..\bsp\sys_config.h
 mobile_platform\bsp_imu.o: ..\lib\pid.h

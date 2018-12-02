@@ -61,5 +61,6 @@ mobile_platform\myiic.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\myiic.o: ../Inc/usart.h
 mobile_platform\myiic.o: ..\bsp\can\bsp_can.h
 mobile_platform\myiic.o: ../Inc/gpio.h
+mobile_platform\myiic.o: ../Inc/tim.h
 mobile_platform\myiic.o: ..\task\ctrl_task.h
 mobile_platform\myiic.o: ..\lib\pid.h

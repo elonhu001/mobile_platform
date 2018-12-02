@@ -119,6 +119,7 @@ int main(void)
   MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
 //  delay_init(180);
+	HAL_TIM_PWM_Start(&htim12,TIM_CHANNEL_1);
 	led_off();
 	dbus_uart_init();
 	can_filter_init(&hcan1);

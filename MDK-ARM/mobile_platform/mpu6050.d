@@ -61,5 +61,6 @@ mobile_platform\mpu6050.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\mpu6050.o: ../Inc/usart.h
 mobile_platform\mpu6050.o: ..\bsp\can\bsp_can.h
 mobile_platform\mpu6050.o: ../Inc/gpio.h
+mobile_platform\mpu6050.o: ../Inc/tim.h
 mobile_platform\mpu6050.o: ..\task\ctrl_task.h
 mobile_platform\mpu6050.o: ..\lib\pid.h

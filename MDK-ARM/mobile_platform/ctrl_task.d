@@ -61,5 +61,6 @@ mobile_platform\ctrl_task.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\ctrl_task.o: ../Inc/usart.h
 mobile_platform\ctrl_task.o: ..\bsp\can\bsp_can.h
 mobile_platform\ctrl_task.o: ../Inc/gpio.h
+mobile_platform\ctrl_task.o: ../Inc/tim.h
 mobile_platform\ctrl_task.o: ..\task\ctrl_task.h
 mobile_platform\ctrl_task.o: ..\lib\pid.h

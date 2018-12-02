@@ -61,5 +61,6 @@ mobile_platform\gpio.o: C:\0_Softwares\0_KEIL\ARM\ARMCC\Bin\..\include\stdbool.h
 mobile_platform\gpio.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\gpio.o: ../Inc/usart.h
 mobile_platform\gpio.o: ..\bsp\can\bsp_can.h
+mobile_platform\gpio.o: ../Inc/tim.h
 mobile_platform\gpio.o: ..\task\ctrl_task.h
 mobile_platform\gpio.o: ..\lib\pid.h

@@ -58,6 +58,15 @@ void speed_calc(float vx, float vw)
   * @brief  nitialize chassis motor pid parameter
   * @usage  before chassis loop use this function
   */
+//typedef struct
+//{
+//	float max_out;
+//	float i_limit;
+//	float kp;
+//	float ki;
+//	float kd;
+//}temp_pid_t;
+//temp_pid_t temp_pid;
 void chassis_param_init(void)
 {
   memset(&chassis, 0, sizeof(chassis_t));
@@ -70,7 +79,7 @@ void chassis_param_init(void)
 	/*chassis tilt angle ctrl pid parameter init*/
   PID_struct_init(&pid_chassis_angle, POSITION_PID, MAX_CHASSIS_VR_SPEED, 50, 14.0f, 0.0f, 50.0f);
 	/*imu temperature pid parameter init*/
-	PID_struct_init(&pid_imu_tmp, POSITION_PID, MAX_CHASSIS_VR_SPEED, 50, 14.0f, 0.0f, 50.0f);
+	PID_struct_init(&pid_imu_tmp, POSITION_PID, 1.0f, 50, 2.0f, 0.0f, 1.0f);
 	/*motor power on*/
 	HAL_GPIO_WritePin(GPIOH, PW24V_1_Pin|PW24V_2_Pin|PW24V_3_Pin|PW24V_4_Pin, GPIO_PIN_SET);
 }
@@ -165,7 +174,7 @@ float pitch,roll,yaw; 		//欧拉角
 short aacx,aacy,aacz;		//加速度传感器原始数据
 short gyrox,gyroy,gyroz;	//陀螺仪原始数据
 short temp;					//温度
-
+float temp_ctrl = 0;
 void Start_chassis_ctrl_task(void const * argument)
 {
 	/*imu init*/
@@ -194,7 +203,11 @@ while(mpu_dmp_init());
 	imu_ahrs_update();
 	imu_attitude_update(); 
 #endif
-
+		
+		/*imu temprature control*/
+//		temp_ctrl = pid_calc(&pid_imu_tmp, imu.temp, 40.0f);
+		//加热使用PB5，蜂鸣器是PH12，修改频率
+		PWM_SetDuty(&htim12, TIM_CHANNEL_1, temp_ctrl);
 
 #if TWO_WHEELS_ON
 		/*banlance circle*/

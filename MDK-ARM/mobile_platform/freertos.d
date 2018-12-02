@@ -62,5 +62,6 @@ mobile_platform\freertos.o: ..\bsp\uart\bsp_uart.h
 mobile_platform\freertos.o: ../Inc/usart.h
 mobile_platform\freertos.o: ..\bsp\can\bsp_can.h
 mobile_platform\freertos.o: ../Inc/gpio.h
+mobile_platform\freertos.o: ../Inc/tim.h
 mobile_platform\freertos.o: ..\task\ctrl_task.h
 mobile_platform\freertos.o: ..\lib\pid.h
